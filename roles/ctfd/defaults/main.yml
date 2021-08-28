@@ -1,0 +1,24 @@
+---
+http_port: 80
+app_name: "ctfd"
+app_dir: "/opt/{{ app_name }}"
+code_dir: "{{ app_dir }}/CTFd-master"
+web_user: "www-data"
+log_dir: "/var/log/{{ app_name }}"
+socket_loc: "/tmp/{{ app_name }}.sock"
+mysql_app_user: ali
+mysql_app_password: amirali
+mysql_app_database: amirdb
+req_path: "{{ app_dir }}/requirements.txt"
+virt_path: "{{ app_dir }}/appvenv"
+
+
+mysql_database_user: ali
+mysql_user_password: amirali
+mysql_database_name: amirdb
+database_server_ip: 185.97.118.246
+
+cache_database_user: ctfd
+cache_database_pass: amir
+cache_server_ip: 185.97.118.235
+
