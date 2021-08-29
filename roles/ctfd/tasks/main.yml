@@ -52,7 +52,7 @@
      virtualenv_command: /usr/bin/python3.8 -m venv
 
 - name: "install some other packages"
-  shell: "{{ virt_path }}/bin/pip install wheel flask gunicorn"
+  shell: "{{ virt_path }}/bin/pip install wheel flask gunicorn cryptography"
 
 - name: copy service file
   template:
